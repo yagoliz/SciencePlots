@@ -62,6 +62,16 @@ with plt.style.context(['science', 'nature']):
     fig.savefig('figures/fig02c.jpg', dpi=300)
     plt.close()
 
+with plt.style.context(['science', 'acm']):
+    fig, ax = plt.subplots()
+    for p in [10, 15, 20, 30, 50, 100]:
+        ax.plot(x, model(x, p), label=p)
+    ax.legend(title='Order')
+    ax.autoscale(tight=True)
+    ax.set(**pparam)
+    fig.savefig('figures/fig02d.jpg', dpi=300)
+    plt.close()
+
 with plt.style.context(['science', 'scatter']):
     fig, ax = plt.subplots(figsize=(4, 4))
     ax.plot([-2, 2], [-2, 2], 'k--')
