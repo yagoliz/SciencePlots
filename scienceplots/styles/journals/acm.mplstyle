@@ -1,4 +1,4 @@
-# Matplotlib style for IEEE plots
+# Matplotlib style for ACM plots
 # This style should work for most two-column journals
 
 # Set color cycle
@@ -12,7 +12,7 @@ figure.dpi : 600
 # Font sizes
 font.size : 8
 
-# ACM style uses libertine font
+# ACM style uses Linux Libertine font
 font.family : serif
 font.serif : Linux Libertine O
 text.usetex: True
