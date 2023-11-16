@@ -1,0 +1,19 @@
+# Matplotlib style for IEEE plots
+# This style should work for most two-column journals
+
+# Set color cycle
+# Set line style as well for black and white graphs
+axes.prop_cycle : (cycler('color', ["#d7191c","#fdae61","#7b3294","#2c7bb6"]) + cycler('ls', ['-', '--', ':', '-.']))
+
+# Set default figure size
+figure.figsize : 3.3, 2.5
+figure.dpi : 600
+
+# Font sizes
+font.size : 8
+
+# ACM style uses libertine font
+font.family : serif
+font.serif : Linux Libertine O
+text.usetex: True
+text.latex.preamble: \usepackage{libertine}\usepackage[libertine]{newtxmath}
